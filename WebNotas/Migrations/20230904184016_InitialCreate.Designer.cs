@@ -10,14 +10,15 @@ using WebNotas.Models;
 namespace WebNotas.Migrations
 {
     [DbContext(typeof(WebNotasContext))]
-    [Migration("20230818042110_inicioProyecto")]
-    partial class inicioProyecto
+    [Migration("20230904184016_InitialCreate")]
+    partial class InitialCreate
     {
+        /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.21")
+                .HasAnnotation("ProductVersion", "7.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("WebNotas.Models.Nota", b =>
